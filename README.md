@@ -5,7 +5,6 @@ Simple python statsroyale parser for better clanwar evaluation. Data (last 10 wa
 
 statsroyale: [https://statsroyale.com](https://statsroyale.com)
 
-
 ## Usage
 
 example clan (Brasil eSports): [https://statsroyale.com/de/clan/8RU0G892](https://statsroyale.com/de/clan/8RU0G892)
@@ -14,7 +13,7 @@ example player (Palitovsk): [https://statsroyale.com/de/profile/P0GVVY2G](https:
 
 
 to generate csv list of clanwars:
-```python
+```bash
 python main.py -r -c 8RU0G892 -o cr-cw-list.csv
 
 # format csv file:
@@ -25,7 +24,7 @@ python main.py -r -c 8RU0G892 -o cr-cw-list.csv
 
 
 to print user clanwars by id or name:
-```python
+```bash
 python main.py -r -c 8RU0G892 -u P0GVVY2G
 # OR
 python main.py -r -c 8RU0G892 -n Palitovsk
@@ -34,6 +33,10 @@ python main.py -r -c 8RU0G892 -n Palitovsk
 ```
 
 Open index.html in Browser to display csv file.
+
+## Screenshots
+
+![preview.png](https://github.com/Lexycon/clash-royale-cw-stats/blob/master/preview.png)
 
 
 ## Todo
