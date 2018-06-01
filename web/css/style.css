@@ -12,9 +12,9 @@ table {
     border-collapse: collapse;
     margin: 0;
     padding: 0;
-    table-layout: auto;
+    table-layout: fixed;
     width: 100%;
-    font-size: 80%;
+    font-size: 70%;
 }
   
 table tr {
@@ -40,7 +40,6 @@ table td {
     padding: .3em;
     border: 1px solid;
     border-color: #b8b8b8;
-    width: 10%;
 }
 
 .grey {
@@ -56,11 +55,15 @@ table td {
 }
 
 .blue {
-    background-color: #A6CFEE;
+    background-color: #a6cfee;
 }
 
 .orange {
     background-color: #eed5a6;
+}
+
+.purple {
+    background-color: #eea6ee;
 }
 
 

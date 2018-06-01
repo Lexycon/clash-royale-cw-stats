@@ -16,18 +16,24 @@ class Player:
     def getName(self):
         return self.name
 
-    def addClanwar(self, id, cards, wins, battles):
+    def addClanwar(self, id, cards, wins, battles, warMode):
         self.clanwarList.append(Clanwar(id, cards, wins, battles))
-        self.sumWins += int(wins)
-        self.sumBattles += int(battles)
         self.sumCards += int(cards)
+        # don't count collection day war wins/battles
+        if (not (warMode == "Col" and id == 0)):
+            self.sumWins += int(wins)
+            self.sumBattles += int(battles)
+        
 
     def getClanwarsCSV(self):
+        # create empty csv row with 11 columns
         clanwarListCSV = []
-        for x in range(0, 10):
+        for x in range(0, 11):
             clanwarListCSV.append(';;')
+        
+        # replace empty columns where clanwar is available
         for clanwar in self.clanwarList:
-            clanwarListCSV[clanwar.getId()-1] = str(clanwar)
+            clanwarListCSV[clanwar.getId()] = str(clanwar)
 
         return ','.join(clanwarListCSV)
 

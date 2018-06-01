@@ -19,6 +19,11 @@ statsRoyaleParser = StatsRoyaleParser(args.clanid)
 if args.refresh:
     statsRoyaleParser.refreshClan()
 
+# parse live (collection day or war day) clanwar 
+statsRoyaleParser.parseClanwar()
+# parse history clanwars (max. last 10) 
+statsRoyaleParser.parseClanwarsHistory()
+# get clanwars object
 clanwars = statsRoyaleParser.getClanwars()
 
 if args.outfile:
