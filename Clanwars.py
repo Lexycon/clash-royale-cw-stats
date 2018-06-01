@@ -13,7 +13,7 @@ class Clanwars:
 
     def getWarMode(self):
         return self.warMode
-        
+
     def addPlayer(self, id, name):
         player = self.getPlayerById(id)
         if player is None:
@@ -40,7 +40,7 @@ class Clanwars:
         print(self.getPlayerByName(name))
 
     def createCSVFile(self, file):
-        with open(file, 'w') as csvfile:
+        with open(file, 'w', encoding='utf-8') as csvfile:
             # write csv header
             headers = ["ID", "Name", "Wins", "Battles", "Cards", "Live" + self.warMode, "#1", "#2", "#3", "#4", "#5", "#6", "#7", "#8", "#9", "#10"]
             dictWriter = csv.DictWriter(csvfile, headers, delimiter = ',')
