@@ -14,7 +14,7 @@ Clan (Brasil eSports) ID: [8RU0G892](https://statsroyale.com/de/clan/8RU0G892)
 Player (Andrelds) ID: [2PJC0R2VG](https://statsroyale.com/de/profile/2PJC0R2VG)
 
 
-To generate CSV file (check output csv example: [CSV file](https://github.com/Lexycon/clash-royale-cw-stats/blob/master/web/cr-cw-list.csv)):
+To generate CSV file (check output CSV example: [CSV file](https://github.com/Lexycon/clash-royale-cw-stats/blob/master/web/cr-cw-list.csv)):
 ```bash
 python main.py -r -c 8RU0G892 -o web/cr-cw-list.csv
 ```
@@ -33,16 +33,15 @@ The parameter -r (refresh) will trigger the statsroyale.com refresh first, so th
 ## View
 
 With the web/index.html you can display the CSV in your browser using the d3js.csv function.
-The 'Live' column can be Collection Day or War day. The Collection Day Wins/Battles won't count to the global user stats.
+The 'Live' column can be Collection Day or War Day. The Collection Day Wins/Battles won't count to the global user stats.
 
 ### Colors
-
-- <span style="color:#eea6ee">purple</span>: Collection Day
-- <span style="color:#b2eea6">green</span>: All matches won (War Day)
-- <span style="color:#eed5a6">orange</span>: At least 1 but not all matches won (War Day)
-- <span style="color:#eea6a6">red</span>: No match won (War Day)
-- <span style="color:#a6cfee">blue</span>: Not played (War Day) but collected (Collection Day)
-- <span style="color:#dedede">grey</span>: Not participated
+- ![#eea6ee](https://placehold.it/15/eea6ee/000000?text=+) `purple: Collection Day`
+- ![#b2eea6](https://placehold.it/15/b2eea6/000000?text=+) `green: All matches won (War Day)`
+- ![#eed5a6](https://placehold.it/15/eed5a6/000000?text=+) `orange: At least 1 but not all matches won (War Day)`
+- ![#eea6a6](https://placehold.it/15/eea6a6/000000?text=+) `red: No match won (War Day)`
+- ![#a6cfee](https://placehold.it/15/a6cfee/000000?text=+) `blue: Not played (War Day) but collected (Collection Day)`
+- ![#dedede](https://placehold.it/15/dedede/000000?text=+) `grey: Not participated`
 
 ## Screenshot
 
